@@ -13,4 +13,8 @@ def add(n1:Int,n2:Int)={
     mul2/mul1
   }
 
+  def rem(mul1:Int,mul2:Int)={
+    mul2%mul1
+  }
+
 }
