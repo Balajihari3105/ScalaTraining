@@ -1,22 +1,17 @@
 object Palindrome extends App {
 
-  def checkEquals(i: Int, n1: Int): Boolean = {
-    if(i==n1){
-      true
+  def checkPalindrome(n: Int): Boolean = {
+    var num = n
+    var rev = 0
+    while (num != 0) {
+      rev = (rev * 10) + num % 10
+      num = num / 10
     }
-    false
+    if(n==rev) true
+    else
+      false
   }
 
-  def checkPalindrome(n1:Int):Unit={
-  var num=n1
-  var n=0
-  if(num!=0){
-    n=n+checkPalindrome(num%10)
-    n
-  }
-  println(checkEquals(n:Int , n1))
 
-}
-
-  checkPalindrome(1001)
+println(checkPalindrome(1001))
 }
