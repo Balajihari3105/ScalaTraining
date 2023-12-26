@@ -1,8 +1,10 @@
 package simpletest
 
-object Hello extends App{
-  val p = new Person("Alvin Alexander")
-  println(s"Hello ${p.name}")
-}
+object Hello extends App {
 
-class Person(var name: String)
+  val a = false
+  val b= false
+println((a||b))
+
+
+}
