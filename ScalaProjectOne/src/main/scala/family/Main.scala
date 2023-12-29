@@ -1,24 +1,21 @@
 package family
 
-import check1.ObMain
-
-
 object Main extends App {
-  private val father = Parent("Rajesh", 50, List(Person("Gopal", 21), Person("Revathi", 23)))
-  private val mother = Parent("Renu", 49, List(Person("Gopal", 21), Person("Revathi", 23)))
-  private val child1 = Children("Gopal", 21, List(father, mother))
-  private val child2 = Children("Revathi", 18, List(father, mother))
-  val family1 = Family(father, mother, List(child1, child2))
+  val alice = Person("Alice", 51)
+  val bob = Person("Bob", 80)
+  val charlie = Person("Charlie", 21)
+  val dave = Person("Dave", 23)
 
-  AddEntry.addChild(child1)
-  AddEntry.addChild(child2)
-  AddEntry.addFamily(family1)
-  AddEntry.addParent(father)
-  AddEntry.addParent(mother)
+  val charlieTree =  FamilyTree(charlie)
+  val daveTree = FamilyTree(dave)
 
-  println(s"The List of Childrens ${AddEntry.childrenList}")
+  val bobTree =  FamilyTree(bob, List(charlieTree, daveTree))
+  val familyTree =  FamilyTree(alice, List(bobTree))
 
-  println(s"The List of Parents ${AddEntry.parentList}")
+  val familyList=new FamilyList
+  familyList.addFamily(familyTree)
 
-  println(s"The List of Couples ${AddEntry.familyList}")
+  familyList.printFamily()
+
+
 }
