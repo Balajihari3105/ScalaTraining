@@ -1,3 +1,5 @@
+package scalabasic
+
 object StringPalindrome extends App {
 
   def checkStringPalindrome(str: String):Boolean = {

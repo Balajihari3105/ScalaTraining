@@ -1,3 +1,5 @@
+package scalabasic
+
 import scala.collection.mutable.ListBuffer
 
 object FibonaciSeries extends App {

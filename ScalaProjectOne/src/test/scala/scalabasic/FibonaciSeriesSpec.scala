@@ -1,7 +1,6 @@
-import org.scalatest.funsuite.AnyFunSuite
-import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
+package scalabasic
 
-import java.util.Collections.list
+import org.scalatest.funsuite.AnyFunSuite
 
 class FibonacciSeriesSpec extends AnyFunSuite {
 

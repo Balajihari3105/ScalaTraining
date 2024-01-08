@@ -1,3 +1,5 @@
+package scalabasic
+
 
 object ScalaList extends App{
   def reverseList(list: List[Any]): List[Any] = {

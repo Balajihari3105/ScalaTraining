@@ -1,3 +1,5 @@
+package scalabasic
+
 object MathOper extends App {
   def add(n1: Int, n2: Int) = {
     n1 + n2

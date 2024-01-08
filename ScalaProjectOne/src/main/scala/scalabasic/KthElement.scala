@@ -1,3 +1,5 @@
+package scalabasic
+
 object KthElement extends App {
   def kthEle(list: List[Int], check: Int): Boolean = {
     list match {

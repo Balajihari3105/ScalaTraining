@@ -1,3 +1,5 @@
+package scalabasic
+
 import org.scalatest.funsuite.AnyFunSuite
 
 class MathOperSpec extends  AnyFunSuite {

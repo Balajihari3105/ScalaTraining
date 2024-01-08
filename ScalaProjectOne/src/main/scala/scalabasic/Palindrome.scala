@@ -1,3 +1,5 @@
+package scalabasic
+
 object Palindrome extends App {
 
   def checkPalindrome(n: Int): Boolean = {
@@ -19,7 +21,7 @@ object Palindrome extends App {
       }
       else {
         helper(n / 10, rev * 10 + n % 10) //1234/10= 123, 0*10 + 4= 0+4 =4   helper(123,4)
-                                           // 123/10=12, 4*10+ 3 =43   helper(12,43)
+                                  // 123/10=12, 4*10+ 3 =43   helper(12,43)
                                   // 12/10 =1, 43*10 + 2= 432   helper(1,432)
                                  // 1/10=0, 432*10 + 1 =4321 helper(0,4321)
 

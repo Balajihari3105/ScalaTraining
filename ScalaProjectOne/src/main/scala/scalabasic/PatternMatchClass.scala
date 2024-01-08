@@ -1,3 +1,5 @@
+package scalabasic
+
 object PatternMatchClass extends App{
  val student1 = Student("Balaji",1)
   val students=List(Student("Balaji",1),Student("Dhanush",2),Student("gopal",3))
