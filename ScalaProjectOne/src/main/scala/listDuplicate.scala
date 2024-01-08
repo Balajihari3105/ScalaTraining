@@ -23,19 +23,6 @@ object listDuplicate extends App {
 
 
 
-  def removeConsecutiveDuplicates(lst: List[Int]): List[Int] = lst match {
-    case Nil => Nil
-    case head :: tail =>
-      tail match {
-        case `head` :: rest => removeConsecutiveDuplicates(tail)
-        case _ => head :: removeConsecutiveDuplicates(tail)
-      }
-  }
-
-  val list = List(1, 1, 1, 2, 2, 1, 1, 2, 3, 4, 4, 3, 2, 1)
-  val result = removeConsecutiveDuplicates(list)
-
-  println(result)
 
 }
 
