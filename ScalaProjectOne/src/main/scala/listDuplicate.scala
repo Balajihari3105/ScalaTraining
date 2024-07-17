@@ -3,6 +3,7 @@ import scala.collection.mutable
 import scala.collection.mutable.Map
 
 object listDuplicate extends App {
+  println("helloguy")
 
   def removeDuplicates[A](list: List[A], uniqueSet: Set[A], result: List[A]): List[A] = {
     list match {
