@@ -4,7 +4,7 @@ import scala.collection.mutable.Map
 
 object listDuplicate extends App {
   println("helloguy")
-
+println("donr")
   def removeDuplicates[A](list: List[A], uniqueSet: Set[A], result: List[A]): List[A] = {
     list match {
       case Nil => result
